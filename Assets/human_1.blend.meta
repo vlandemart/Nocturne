@@ -83,6 +83,59 @@ ModelImporter:
     100154: Upperarm.Left 1
     100156: Upperarm.Right
     100158: Upperarm.Right 1
+    100160: Back_0
+    100162: COG_0
+    100164: Fingers1_Left
+    100166: Fingers1_Left_0
+    100168: Fingers1_Right
+    100170: Fingers1_Right_0
+    100172: Fingers2_Left
+    100174: Fingers2_Left_0
+    100176: Fingers2_Right
+    100178: Fingers2_Right_0
+    100180: Foot_Left
+    100182: Foot_Left_0
+    100184: Foot_Right
+    100186: Foot_Right_0
+    100188: Forearm_Left
+    100190: Forearm_Left_0
+    100192: Forearm_Right
+    100194: Forearm_Right_0
+    100196: Hand_Left
+    100198: Hand_Left_0
+    100200: Hand_Right
+    100202: Hand_Right_0
+    100204: Head_0
+    100206: Hip_0
+    100208: Neck_0
+    100210: Shin_Left
+    100212: Shin_Left_0
+    100214: Shin_Right
+    100216: Shin_Right_0
+    100218: Shoulder_Left
+    100220: Shoulder_Left_0
+    100222: Shoulder_Right
+    100224: Shoulder_Right_0
+    100226: Thigh_Left
+    100228: Thigh_Left_0
+    100230: Thigh_Right
+    100232: Thigh_Right_0
+    100234: Thumb1_Left
+    100236: Thumb1_Left_0
+    100238: Thumb1_Right
+    100240: Thumb1_Right_0
+    100242: Thumb2_Left
+    100244: Thumb2_Left_0
+    100246: Thumb2_Right
+    100248: Thumb2_Right_0
+    100250: Toes_Left
+    100252: Toes_Left_0
+    100254: Toes_Right
+    100256: Toes_Right_0
+    100258: Upperarm_Left
+    100260: Upperarm_Left_0
+    100262: Upperarm_Right
+    100264: Upperarm_Right_0
     400000: Back
     400002: Back 1
     400004: Camera
@@ -163,9 +216,64 @@ ModelImporter:
     400154: Upperarm.Left 1
     400156: Upperarm.Right
     400158: Upperarm.Right 1
+    400160: Back_0
+    400162: COG_0
+    400164: Fingers1_Left
+    400166: Fingers1_Left_0
+    400168: Fingers1_Right
+    400170: Fingers1_Right_0
+    400172: Fingers2_Left
+    400174: Fingers2_Left_0
+    400176: Fingers2_Right
+    400178: Fingers2_Right_0
+    400180: Foot_Left
+    400182: Foot_Left_0
+    400184: Foot_Right
+    400186: Foot_Right_0
+    400188: Forearm_Left
+    400190: Forearm_Left_0
+    400192: Forearm_Right
+    400194: Forearm_Right_0
+    400196: Hand_Left
+    400198: Hand_Left_0
+    400200: Hand_Right
+    400202: Hand_Right_0
+    400204: Head_0
+    400206: Hip_0
+    400208: Neck_0
+    400210: Shin_Left
+    400212: Shin_Left_0
+    400214: Shin_Right
+    400216: Shin_Right_0
+    400218: Shoulder_Left
+    400220: Shoulder_Left_0
+    400222: Shoulder_Right
+    400224: Shoulder_Right_0
+    400226: Thigh_Left
+    400228: Thigh_Left_0
+    400230: Thigh_Right
+    400232: Thigh_Right_0
+    400234: Thumb1_Left
+    400236: Thumb1_Left_0
+    400238: Thumb1_Right
+    400240: Thumb1_Right_0
+    400242: Thumb2_Left
+    400244: Thumb2_Left_0
+    400246: Thumb2_Right
+    400248: Thumb2_Right_0
+    400250: Toes_Left
+    400252: Toes_Left_0
+    400254: Toes_Right
+    400256: Toes_Right_0
+    400258: Upperarm_Left
+    400260: Upperarm_Left_0
+    400262: Upperarm_Right
+    400264: Upperarm_Right_0
     2000000: Camera
     2100000: MaleSkin
     2100002: FemaleSkin
+    2100004: FemaleSkin__femaleskin
+    2100006: MaleSkin__maleskin
     4300000: HumanMale
     4300002: HumanFemale
     7400000: 'Act: Run'
@@ -203,6 +311,7 @@ ModelImporter:
     10800002: Spot.001
     13700000: HumanFemale
     13700002: HumanMale
+    2186277476908879412: ImportLogs
   externalObjects: {}
   materials:
     importMaterials: 1
@@ -215,7 +324,8 @@ ModelImporter:
     resampleCurves: 1
     optimizeGameObjects: 0
     motionNodeName: 
-    rigImportErrors: 
+    rigImportErrors: "Avatar creation failed:\n\tTransform 'Thigh.Left' for human
+      bone 'LeftUpperLeg' not found\n"
     rigImportWarnings: 
     animationImportErrors: 
     animationImportWarnings: 
