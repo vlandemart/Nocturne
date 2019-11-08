@@ -179,7 +179,7 @@ BlendTree:
     m_Motion: {fileID: 7400000, guid: b7fd7bcd6fbdef543b55f53db9661714, type: 2}
     m_Threshold: 1
     m_Position: {x: 1, y: -1}
-    m_TimeScale: 1
+    m_TimeScale: -1
     m_CycleOffset: 0
     m_DirectBlendParameter: horizontal
     m_Mirror: 0
@@ -477,7 +477,7 @@ AnimatorStateTransition:
     m_ConditionEvent: aiming
     m_EventTreshold: 0
   m_DstStateMachine: {fileID: 0}
-  m_DstState: {fileID: 1102240131045309538}
+  m_DstState: {fileID: 0}
   m_Solo: 0
   m_Mute: 0
   m_IsExit: 0
