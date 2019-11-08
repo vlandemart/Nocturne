@@ -15,7 +15,9 @@ public class PlayerMovement : MonoBehaviour
 	[SerializeField]
 	private float gravity = 20.0f;
 
-	private Vector3 moveDirection = Vector3.zero;
+    public Transform cameraTransform;
+
+    private Vector3 moveDirection = Vector3.zero;
 
 	void Start()
 	{
@@ -28,11 +30,13 @@ public class PlayerMovement : MonoBehaviour
 		if (characterController.isGrounded)
 		{
 			moveDirection = new Vector3(Input.GetAxis("Horizontal"), 0.0f, Input.GetAxis("Vertical"));
-			moveDirection *= speed * Time.deltaTime;
+			moveDirection = moveDirection.normalized * (speed * Time.deltaTime);
+            moveDirection = cameraTransform.TransformDirection(moveDirection);
 
-			if (Input.GetButton("Jump"))
+            if (Input.GetButton("Jump"))
 			{
 				moveDirection.y = jumpSpeed;
+
 				Debug.Log("Jumped");
 			}
 		}
