@@ -3,12 +3,9 @@ using UnityEngine;
 
 public class PlayerInteractions : MonoBehaviour
 {
-	[SerializeField]
-	private List<Interactable> interactables;
-	[SerializeField]
-	private Interactable currentInteractable;
+	private List<Interactable> interactables = new List<Interactable>();
+	private Interactable currentInteractable = null;
 
-	[ContextMenu("Interact")]
 	public bool Interact()
 	{
 		if (currentInteractable == null)
