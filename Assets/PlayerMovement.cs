@@ -5,7 +5,7 @@ using UnityEngine;
 [RequireComponent(typeof(CharacterController))]
 public class PlayerMovement : MonoBehaviour
 {
-	CharacterController characterController;
+	private CharacterController characterController;
 	private Animator animator;
 
 	[SerializeField]
@@ -15,32 +15,39 @@ public class PlayerMovement : MonoBehaviour
 	[SerializeField]
 	private float gravity = 20.0f;
 
+	[SerializeField]
+	private Transform cameraTransform;
 	private Vector3 moveDirection = Vector3.zero;
 
-	void Start()
+	private void Start()
 	{
 		characterController = GetComponent<CharacterController>();
 		animator = GetComponent<Animator>();
 	}
 
-	void Update()
+	public void Move(Vector2 inputVector)
 	{
 		if (characterController.isGrounded)
 		{
-			moveDirection = new Vector3(Input.GetAxis("Horizontal"), 0.0f, Input.GetAxis("Vertical"));
+			moveDirection = new Vector3(inputVector.x, 0.0f, inputVector.y);
 			moveDirection = moveDirection.normalized * (speed * Time.deltaTime);
-
-			if (Input.GetButton("Jump"))
-			{
-				moveDirection.y = jumpSpeed;
-				Debug.Log("Jumped");
-			}
+			moveDirection = cameraTransform.TransformDirection(moveDirection);
 		}
 
 		moveDirection.y -= gravity * Time.deltaTime;
-
 		characterController.Move(moveDirection);
+		Animate();
+	}
 
+	public void Jump()
+	{
+		if (!characterController.isGrounded)
+			return;
+		moveDirection.y = jumpSpeed;
+	}
+
+	private void Animate()
+	{
 		//tmp solution for animation
 		//later will be moved to player
 		animator.SetFloat("horizontal", characterController.velocity.x / speed);

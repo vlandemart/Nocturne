@@ -6,9 +6,17 @@
     <e p="$PROJECT_DIR$" t="IncludeRecursive">
       <e p="Assembly-CSharp.csproj" t="IncludeRecursive" />
       <e p="Assets" t="Include">
+        <e p="CameraControll.cs" t="Include" />
+        <e p="Interactable.cs" t="Include" />
+        <e p="Item.cs" t="Include" />
+        <e p="ItemData.cs" t="Include" />
+        <e p="LivingEntity.cs" t="Include" />
         <e p="PauseGame.cs" t="Include" />
         <e p="PausePlayerInput.cs" t="Include" />
+        <e p="Player.cs" t="Include" />
+        <e p="PlayerInteractions.cs" t="Include" />
         <e p="PlayerMovement.cs" t="Include" />
+        <e p="Weapon.cs" t="Include" />
       </e>
       <e p="Nocturne.sln" t="IncludeFlat" />
       <e p="Temp/bin" t="ExcludeRecursive" />
